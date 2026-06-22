@@ -7,7 +7,19 @@ DB/ORM and language from the repo itself.
 - **`sql-review`** — SQL migrations & queries: migration safety, RLS correctness, function security,
   concurrency, blanket grants, query review. DB-agnostic (raw SQL, Prisma, Drizzle, Kysely, etc.).
 - **`privacy-review`** — privacy/security moral inventory for apps holding sensitive user data:
-  stated-vs-actual gap, identity-source triage, encryption posture, identity linkage, reachability.
+  stated-vs-actual gap, identity-source triage, encryption posture, identity linkage, reachability,
+  third-party/AI egress.
+- **`ts-review`** — security-scoped TypeScript/JS review: input validation, subprocess spawning,
+  env/secret leakage, path traversal, file permissions, error discipline. Fires only on
+  trust-boundary code (not a style linter).
+- **`node-review`** — JS/Node package & build layer: lockfile integrity (`npm ci` drift),
+  package-manager hygiene, dependency-bump safety, test-runner↔runtime compatibility.
+
+**Coming next:** `ci-review` (does the gate validate what it claims), `cost-review` (metered cloud /
+LLM-budget runaway). Open an issue or PR if you want one sooner.
+
+Together they cover a full "audit any TS/Node repo" sweep: **privacy-review** (what leaks) →
+**ts-review** (trust-boundary code) → **sql-review** (DB/RLS) → **node-review** (supply chain).
 
 ## Install (drop into any repo)
 
