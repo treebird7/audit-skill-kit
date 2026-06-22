@@ -1,7 +1,7 @@
 # audit-kit — portable code-review skills
 
 Two self-contained review skills that run against **any** repo, with **no ecosystem dependencies**
-(no shared knowledge tree, no training pipeline, no Supabase/treebird assumptions). They detect the
+(no shared knowledge tree, no training pipeline, no Supabase/user specific assumptions). They detect the
 DB/ORM and language from the repo itself.
 
 - **`sql-review`** — SQL migrations & queries: migration safety, RLS correctness, function security,
