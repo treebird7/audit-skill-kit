@@ -1,3 +1,26 @@
+> ## ⚠️ Moved — this repo is archived
+>
+> These four skills now live in **[treebird7/treebird-oss-skills](https://github.com/treebird7/treebird-oss-skills)**,
+> where they're installable as Claude Code plugins and get ongoing updates. The versions there are
+> revised, not just relocated — `sql-review` gained live privilege-drift checks, identity-source
+> triage for function security, and a concurrency-race check; `ts-review` gained CSP transport
+> coverage; `privacy-review` gained safety-intent enforcement and least-privilege checks.
+>
+> ```
+> /plugin marketplace add treebird7/treebird-oss-skills
+> /plugin install skill-sql-review@treebird-oss-skills
+> /plugin install skill-privacy-review@treebird-oss-skills
+> /plugin install skill-ts-review@treebird-oss-skills
+> /plugin install skill-node-review@treebird-oss-skills
+> ```
+>
+> The `--gold` flag, the `.audit/gold-pairs.jsonl` schema, and the "no ecosystem dependencies"
+> guarantee all carry over unchanged. Thanks to everyone who filed and fixed things here — those
+> contributions came with the skills.
+>
+> This repo stays up, read-only, so existing links keep resolving. New issues and PRs belong on
+> `treebird-oss-skills`.
+
 # audit-kit — portable code-review skills
 
 Four self-contained review skills that run against **any** repo, with **no ecosystem dependencies**
