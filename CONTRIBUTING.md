@@ -1,3 +1,7 @@
+> **This repo is archived.** Contributions now go to
+> [treebird7/treebird-oss-skills](https://github.com/treebird7/treebird-oss-skills).
+> The fork-and-PR flow below still describes the process — only the target repo changed.
+
 # Contributing
 
 `main` is protected — all changes land through a pull request. External contributors don't have
